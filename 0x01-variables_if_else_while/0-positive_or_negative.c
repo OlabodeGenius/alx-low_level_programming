@@ -1,19 +1,21 @@
-#include<stdio.h>
-#include <stdlib.h>
+int main(void)
+{
+        int n;
 
-int main() {
-  int n;
-
-  srand(time(0));
-  n = rand() - RAND_MAX / 2;
-
-  if (n > 0) {
-    printf("The number is positive: %d\n", n);
-  } else if (n < 0) {
-    printf("The number is negative: %d\n", n);
-  } else {
-    printf("The number is zero: %d\n", n);
-  }
-
-  return 0;
-}
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        /* your code goes there */
+        if (n > 0)
+        {
+                printf("%d is positive\n", n);
+        }
+        if (n < 0)
+        {
+                printf("%d is negative\n", n);
+        }
+        if (n == 0)
+        {
+                printf("%d is zero\n", n);
+        }
+        return (0);
+}       :
